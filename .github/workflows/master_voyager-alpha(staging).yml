@@ -7,7 +7,7 @@ name: Build and deploy Python app to Azure Web App - voyager-alpha
 on:
   push:
     branches:
-      - master
+      - staging
   workflow_dispatch:
 
 jobs:
@@ -73,4 +73,5 @@ jobs:
         with:
           app-name: 'voyager-alpha'
           slot-name: 'staging'
+
           
